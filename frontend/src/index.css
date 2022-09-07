@@ -1,7 +1,6 @@
-@import  url('http://dyslexicfonts.com/fonts/OpenDyslexic-Regular.otf');
 
 * {
-  font-family: 'opendislexic',verdana, sans-serif;
+  font-family: verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,10 +9,10 @@
 
 .body,
 html {
-  color: #fff;
-  background-image: linear-gradient(45deg, wheat,deepskyblue, cornflowerblue,chartreuse,hotpink,deeppink,gold,orange);
-  background-size: 9800% 300%;
-  animation: gradient-animation 45s ease infinite;
+  color: whitesmoke;
+  background-image: linear-gradient(45deg, whitesmoke,slateblue);
+  background-size:300% 300%;
+  
 }
 
 a,
@@ -35,19 +34,8 @@ a:visited {
 
 
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
-
+ 
   
 
 
