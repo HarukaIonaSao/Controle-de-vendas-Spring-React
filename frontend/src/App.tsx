@@ -1,34 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import NotificationButton from "./components/NotificatioButton";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App() {  
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+  <>
+    <h1>Olá,meu nome é Roberta</h1>
+    <h2>Seja bem vind@ ao meu primeiro projeto Spring React!</h2>
+    <p> Visite meu  <a href="https://github.com/harukaionasao">  Github</a> </p>
+    <NotificationButton />
+    <NotificationButton />
+    <NotificationButton />
+    <NotificationButton />
+    <NotificationButton />
+  </>
+  )  
 }
 
-export default App
+export default App;
