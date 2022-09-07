@@ -1,17 +1,20 @@
-import NotificationButton from "./components/NotificatioButton";
+import Header from "./components/Header"
+import VendasAnuais from "./components/VendasAnuais"
 
 function App() {  
   return (
   <>
-    <h1>Olá,meu nome é Roberta</h1>
-    <h2>Seja bem vind@ ao meu primeiro projeto Spring React!</h2>
-    <p> Visite meu  <a href="https://github.com/harukaionasao">  Github</a> </p>
-    <NotificationButton />
-    <NotificationButton />
-    <NotificationButton />
-    <NotificationButton />
-    <NotificationButton />
-  </>
+
+  <Header/>
+  <main>
+      <section id="sales">
+        <div className="dsmeta-container">
+          <VendasAnuais/>
+
+          </div>
+       </section>
+  </main> 
+  </>    
   )  
 }
 
