@@ -55,10 +55,10 @@ function VendasAnuais() {
         <table className="dsmeta-sales-table">
           <thead>
             <tr>
-              <th className="show992">Quadrimestre</th>
-              <th className="show576">Fechamento</th>
-              <th>Produto</th>
-              <th className="show992">Unidades</th>
+              <th className="show992">Id</th>
+              <th className="show576">Data</th>
+              <th>Vendedor</th>
+              <th className="show992">Visitas</th>
               <th className="show992">Vendas</th>
               <th>Total</th>
               <th>Notificar</th>
@@ -67,13 +67,13 @@ function VendasAnuais() {
           <tbody>
             {sales.map(sale => {
               return(
-                <tr key={sale.id}>
+            <tr key={sale.id}>
               <td className="show992">{sale.id}</td>
               <td className="show576">{new Date(sale.date).toLocaleDateString()}</td>
               <td>{sale.sellerName}</td>
               <td className="show992">{sale.visited}</td>
               <td className="show992">{sale.deals}</td>
-              <td>{sale.amount.toFixed(2)}</td>
+              <td>R$ {sale.amount.toFixed(2)}</td>
               <td>
                 <div className="dsmeta-red-btn-container">
                   <NotificationButton saleId={sale.id} />
