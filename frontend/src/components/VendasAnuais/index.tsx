@@ -23,7 +23,7 @@ function VendasAnuais() {
       const dmax = maxDate.toISOString().slice(0, 10);
 
 
-      axios.get('${BASE_URL}/sales?=${dmin}&maxDate=${dmax}').then(response => {
+      axios.get(`${BASE_URL}/sales?=${dmin}&maxDate=${dmax}`).then(response => {
         setSales(response.data.content);
       })
     }, [minDate, maxDate]);
@@ -31,7 +31,7 @@ function VendasAnuais() {
 
   return (
     <div className="dsmeta-card">
-      <h2 className="dsmeta-sales-title">Vendas</h2>
+      <h2 className="dsmeta-sales-title">Vendas por período</h2>
       <div>
         <div className="dsmeta-form-control-container">
           <DatePicker
